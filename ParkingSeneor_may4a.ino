@@ -63,5 +63,5 @@ long measureDistance() {
   digitalWrite(trigPin, LOW); 
   long duration = pulseIn(echoPin, HIGH);
   delay(10);
-  return duration * 0.034 * 2;
+  return duration * 0.034 / 2;
 }
